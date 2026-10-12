@@ -1,0 +1,55 @@
+#include<stdio.h>
+#include<stdlib.h>
+typedef struct stack{
+   int top;
+  char body[100];
+} stack;
+
+int pop (stack*s){
+  return s->body[s->top--]=0;
+
+}
+
+int push(stack*s,char c){
+  return s->body[s->top++]=c;
+} 
+
+int main(){
+  stack* s= (stack*)malloc(sizeof(stack));
+  int count=0;
+  char c;
+  while((c=getchar())!=EOF){
+    if(c=='('){
+      if(s->top== 99){
+        printf("-1\n");
+        return 0;
+      }
+      else{
+        push(s,c);
+      }
+    }
+    else if(c==')'){
+      if(s->top != 0){
+        pop(s);
+        count++;
+      }
+      else{
+        printf("-1\n");
+        return 0;  
+      }
+    }
+  }
+  
+  
+  if(s->top!=0)
+    printf("-1");
+  else{
+    printf("%d\n",count);
+  }
+  return 0;
+}
+
+
+
+
+

@@ -1,0 +1,81 @@
+Breakpoint 1, merge (A=0x55555555a670, left=0, mid=1, right=2) at src/mergesort.c:8
+8	  int n1 = mid - left;
+(gdb) c
+Continuing.
+
+Breakpoint 1, merge (A=0x55555555a670, left=2, mid=3, right=4) at src/mergesort.c:8
+8	  int n1 = mid - left;
+(gdb) 
+Continuing.
+
+Breakpoint 1, merge (A=0x55555555a670, left=0, mid=2, right=4) at src/mergesort.c:8
+8	  int n1 = mid - left;
+(gdb) 
+Continuing.
+
+Breakpoint 1, merge (A=0x55555555a670, left=4, mid=5, right=6) at src/mergesort.c:8
+8	  int n1 = mid - left;
+(gdb) 
+Continuing.
+
+Breakpoint 1, merge (A=0x55555555a670, left=6, mid=7, right=8) at src/mergesort.c:8
+8	  int n1 = mid - left;
+(gdb) 
+Continuing.
+
+Breakpoint 1, merge (A=0x55555555a670, left=4, mid=6, right=8) at src/mergesort.c:8
+8	  int n1 = mid - left;
+(gdb) 
+Continuing.
+
+Breakpoint 1, merge (A=0x55555555a670, left=0, mid=4, right=8) at src/mergesort.c:8
+8	  int n1 = mid - left;
+(gdb) 
+Continuing.
+
+Breakpoint 1, merge (A=0x55555555a670, left=8, mid=9, right=10) at src/mergesort.c:8
+8	  int n1 = mid - left;
+(gdb) 
+Continuing.
+
+Breakpoint 1, merge (A=0x55555555a670, left=10, mid=11, right=12) at src/mergesort.c:8
+8	  int n1 = mid - left;
+(gdb) 
+Continuing.
+
+Breakpoint 1, merge (A=0x55555555a670, left=8, mid=10, right=12) at src/mergesort.c:8
+8	  int n1 = mid - left;
+(gdb) 
+Continuing.
+
+Breakpoint 1, merge (A=0x55555555a670, left=12, mid=13, right=14) at src/mergesort.c:8
+8	  int n1 = mid - left;
+(gdb) 
+Continuing.
+
+Breakpoint 1, merge (A=0x55555555a670, left=15, mid=16, right=17) at src/mergesort.c:8
+8	  int n1 = mid - left;
+(gdb) 
+Continuing.
+
+Breakpoint 1, merge (A=0x55555555a670, left=14, mid=15, right=17) at src/mergesort.c:8
+8	  int n1 = mid - left;
+(gdb) 
+Continuing.
+
+Breakpoint 1, merge (A=0x55555555a670, left=12, mid=14, right=17) at src/mergesort.c:8
+8	  int n1 = mid - left;
+(gdb) 
+Continuing.
+
+Breakpoint 1, merge (A=0x55555555a670, left=8, mid=12, right=17) at src/mergesort.c:8
+8	  int n1 = mid - left;
+(gdb) 
+Continuing.
+
+Breakpoint 1, merge (A=0x55555555a670, left=0, mid=8, right=17) at src/mergesort.c:8
+8	  int n1 = mid - left;
+(gdb) 
+Continuing.
+[Inferior 1 (process 14053) exited normally]
+

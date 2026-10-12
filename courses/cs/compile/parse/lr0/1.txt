@@ -1,0 +1,44 @@
+give an algorithm to judge if an input string is an expresion
+
+(1) S -> E
+(2) E -> E + T
+(3) E -> T
+(4) T -> T * F
+(5) T -> F
+(6) F -> ( E )
+(7) F -> a
+
+input
+a * a + a
+
+output
+$       | a * a + a $
+$ a     |   * a + a $
+$ F     |   * a + a $
+$ T     |   * a + a $
+$ T *   |     a + a $
+$ T * a |       + a $
+$ T * F |       + a $
+$ T     |       + a $
+$ E     |       + a $
+$ E +   |         a $
+$ E + a |           $
+$ E + F |           $
+$ E + T |           $
+$ E     |           $
+$ S     |           $
+
+while c != '\0'
+  flag = false;
+  for all X -> ABC 
+    if stack.top() == ABC and c in FOLLOW(X)
+      if (X == S)
+        success
+      stack.pop(ABC)
+      stack.push(X)
+      flag = true
+      break
+  if flag = false
+    stack.push(c)
+    get(c)
+fail

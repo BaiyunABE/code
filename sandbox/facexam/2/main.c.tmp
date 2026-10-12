@@ -1,0 +1,50 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+typedef struct node{
+  int value;
+  node* lchild;
+  node* rchild;
+}node;
+
+node* createNode(node* r, int value){
+  r=(node*)malloc(sizeof(node));
+  r->value = value;
+  r->lchild = NULL;
+  r->rchild = NULL;
+  return r;
+}
+
+node* createTree(node* r, int value){
+  if(value <= r-> value){
+    if(r->lchild == NULL)
+    r->lchild = createNode(r->lchild,value);
+    else{
+    createTree(r->lchild,value);:
+  }
+}
+
+int main(){
+  char c;
+  int flag = 0;
+  node* r;
+  node* cur;
+  while((c==getchar())!=EOF&& c>='0' && c <='9'){
+    int num= c-'0';
+    if(flag == 0){
+      r = createNode(r,num);
+      cur = r;
+    }
+    else if (num <= cur->value){
+      cur->lchild = createNode(lchild,num);
+      cur=cur->lchild;
+    }
+    else if (num > cur->value){
+      cur->rchild = createNode(rchild,num);
+      cur=cur->rchild;
+    }
+  }
+  
+  
+  return 0;
+}
